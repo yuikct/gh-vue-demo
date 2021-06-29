@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h6>{{ msg }}</h6>
+    <el-button @click="toG6">跳转g6</el-button>
   </div>
 </template>
 
@@ -10,6 +11,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+    toG6(){
+      this.$router.push('/demo')
     }
   }
 }
