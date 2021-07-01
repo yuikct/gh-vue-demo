@@ -2,6 +2,8 @@
   <div class="hello">
     <h6>{{ msg }}</h6>
     <el-button @click="toG6">跳转g6</el-button>
+<!--    <el-button @click="toDrag">跳转Drag</el-button>-->
+    <router-link to="/drag">跳转Drag</router-link>
   </div>
 </template>
 
