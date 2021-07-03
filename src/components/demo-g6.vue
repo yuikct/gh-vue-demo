@@ -39,6 +39,22 @@ export default {
       },
     }
   },
+  // 进入页面前调用
+  beforeRouteEnter(to, from, next) {
+    console.log('进入enter路由钩子')
+    next()
+  },
+  // 离开页面调用
+  beforeRouteLeave(to,from, next){
+    console.log('进入leave路由钩子')
+    next()
+  },
+  // 页面路由改变时调用
+  beforeRouteUpdate(to, from, next) {
+    console.log('进入update路由钩子')
+    console.log(to.params.id)
+    next()
+  },
   mounted() {
     // this.initG6()
     // this.initG6View()
